@@ -31,10 +31,6 @@
                     <flux:navlist.item icon="queue-list" :href="route('expense-categories.index')" :current="request()->routeIs
     ('expense-categories')" :current="request()->routeIs('expense-categories.index')" wire:navigate>{{ __('expense categories')
                         }}</flux:navlist.item>
-                    
-                    <flux:navlist.item icon="rectangle-group" href="#">Accounts</flux:navlist.item>
-                    <flux:navlist.item icon="rectangle-stack" href="#">Reports</flux:navlist.item>
-                    <flux:navlist.item icon="shield-check" href="#">Approvals</flux:navlist.item>
                 </flux:navlist.group>
 
 {{--                //finance section--}}
