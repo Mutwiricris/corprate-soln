@@ -24,7 +24,17 @@
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                     <flux:navlist.item icon="chart-bar" :href="route('analytics')" :current="request()->routeIs
-                    ('analytics')" wire:navigate>{{ __('Analytics') }}</flux:navlist.item>
+    ('analytics')" wire:navigate>{{ __('Analytics') }}</flux:navlist.item>
+                    <flux:navlist.item icon="chart-bar" :href="route('Expenses')" :current="request()->routeIs
+    ('Expenses')" :current="request()->routeIs('newExpense')" wire:navigate>{{ __('my expenses')
+                        }}</flux:navlist.item>
+                    <flux:navlist.item icon="queue-list" :href="route('expense-categories.index')" :current="request()->routeIs
+    ('expense-categories')" :current="request()->routeIs('expense-categories.index')" wire:navigate>{{ __('expense categories')
+                        }}</flux:navlist.item>
+                    
+                    <flux:navlist.item icon="rectangle-group" href="#">Accounts</flux:navlist.item>
+                    <flux:navlist.item icon="rectangle-stack" href="#">Reports</flux:navlist.item>
+                    <flux:navlist.item icon="shield-check" href="#">Approvals</flux:navlist.item>
                 </flux:navlist.group>
 
 {{--                //finance section--}}
@@ -36,10 +46,10 @@
                     <flux:navlist.group  icon="home" expandable heading="Expenses" class="hidden lg:grid">
 
                         <flux:navlist.item icon="chart-bar" :href="route('Expenses')" :current="request()->routeIs
-                    ('Expenses')" :current="request()->routeIs('newExpense')" wire:navigate>{{ __('my expenses')
+    ('Expenses')" :current="request()->routeIs('newExpense')" wire:navigate>{{ __('my expenses')
                     }}</flux:navlist.item>
                     <flux:navlist.item icon="queue-list" :href="route('expense-categories.index')" :current="request()->routeIs
-                    ('expense-categories')" :current="request()->routeIs('expense-categories.index')" wire:navigate>{{ __('expense categories')
+    ('expense-categories')" :current="request()->routeIs('expense-categories.index')" wire:navigate>{{ __('expense categories')
                     }}</flux:navlist.item>
 
                         <flux:navlist.item icon="rectangle-group" href="#">Accounts</flux:navlist.item>
