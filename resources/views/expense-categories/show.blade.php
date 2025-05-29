@@ -86,7 +86,8 @@
                     <svg class="mx-auto w-16 h-16 text-gray-300 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 9V5l-3 3-3-3v4M3 13l4 4L3 21m18-8l-4 4 4 4M8 13h8a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2v-6a2 2 0 012-2z"></path>
                     </svg>
-                    <p class="text-gray-500">No expenses found in this category.</p>
+                    <p class="text-gray-500">No expenses found in this category. </p>
+                    <a href="{{ route('newExpense') }}" class="text-blue-600 hover:text-blue-900">Create a new expense</a>
                 </div>
             @else
                 <div class="overflow-x-auto">
